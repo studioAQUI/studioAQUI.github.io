@@ -1,0 +1,53 @@
+<div class="text-5xl lg:text-sm">
+  <div>
+    <div>{{page.description}}</div>
+    <div>{{page.ville}}</div>
+  </div>
+  <div class="mt-3">
+    {% if page.maitre_d_oeuvre %}
+      <div>
+        <span class="font-bold">maître d’oeuvre</span>
+        |
+        {{page.maitre_d_oeuvre}}
+      </div>
+    {% endif %}
+    {% if page.adresse %}
+      <div>
+        <span class="font-bold">lieu</span>
+        |
+        {{page.adresse}}
+      </div>
+    {% endif %}
+
+    {% if page.programme %}
+      <div>
+        <span class="font-bold">programme</span>
+        |
+        {{page.programme}}
+      </div>
+    {% endif %}
+
+    {% if page.cout %}
+      <div>
+        <span class="font-bold">coût</span>
+        |
+        {{page.cout}}
+      </div>
+    {% endif %}
+
+    {% if page.surface %}
+      <div>
+        <span class="font-bold">surface</span>
+        |
+        {{page.surface}}
+      </div>
+    {% endif %}
+    {% if page.etat %}
+      <div>
+        <span class="font-bold">état</span>
+        |
+        {{page.etat}}
+      </div>
+    {% endif %}
+  </div>
+</div>

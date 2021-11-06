@@ -1,0 +1,31 @@
+<nav class="w-60 flex-shrink-0">
+  <ul>
+    <li class="text-xl">
+      <a class="{% if page.url == '/infos/' %}font-bold{% endif %}" href="/infos/">infos</a>
+    </li>
+    <li class="text-xl">
+      <a class="{% if page.url contains '/projets/' %}font-bold{% endif %}" href="/projets/">projets</a>
+      {% if page.url contains '/projets/' %}
+        <ul class="leading-3 list-none">
+          {% for projet in site.projets %}
+            <li class="list-none">
+              .
+              <a class="text-sm {% if page.url contains projet.url %}font-bold{% endif %}" href="{{ projet.url }}">
+                {{ projet.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  </ul>
+
+
+  {% if page.url '/projets/' %}
+    {% if page.description %}
+      <div class="mt-16"></div>
+      {%- include project-info.html -%}
+    {% endif %}
+  {% endif %}
+
+
+</nav>

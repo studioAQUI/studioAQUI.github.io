@@ -1,0 +1,37 @@
+<!-- Lazy Loading par défaut sur toutes les pages -->
+<script src="/assets/vendor/lozad/lozad.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.addEventListener("load", function () { // lazy loads elements with default selector as '.lozad'
+    const observer = lozad();
+    observer.observe();
+  });
+</script>
+
+<!-- Control burger menu -->
+<script>
+  (function () { // Get the modal
+    var modal = document.getElementById("menu-modal");
+    var content = document.getElementById("content");
+
+    // Get the button that opens the modal
+    var openBtn = document.getElementById("burger-button");
+
+    // Get the button that close the modal
+    var closeBtn = document.getElementById("close-button");
+
+
+
+    // When the user clicks on the button, open the modal
+    openBtn.onclick = function () {
+      modal.style.display = "block";
+      content.style.display = "none";
+    }
+
+    // When the user clicks on X, close the modal
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+      content.style.display = "block";
+    }
+
+  })();
+</script>

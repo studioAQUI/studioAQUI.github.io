@@ -1,0 +1,29 @@
+<!-- The Modal -->
+<div class="modal" id="menu-modal">
+  <button class="lg:hidden absolute top-14 left-10" id="close-button">
+    <img src="/assets/icons/close.png" width="80px"/>
+  </button>
+
+  <nav class="mt-20 text-center">
+    <ul class="list-none leading-loose">
+      <li class="text-8xl">
+        <a class="{% if page.url == '/' %}font-bold{% endif %}" href="/">home</a>
+      </li>
+      <li class="text-8xl">
+        <a class="{% if page.url == '/infos/' %}font-bold{% endif %}" href="/infos/">infos</a>
+      </li>
+      <li class="mb-2 text-8xl">projets</li>
+      <li class="text-6xl">
+        <ul class="list-none leading-relaxed">
+          {% for projet in site.projets %}
+            <li class="list-none">
+              <a class="text-5xl {% if page.url contains projet.url %}font-bold{% endif %}" href="{{ projet.url }}">
+                {{ projet.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</div>
