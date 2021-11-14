@@ -11,15 +11,15 @@
    "linkTo":"/projets/besse"
 },
     {
-   "src":"/assets/images/21.04_FONTCOUVERTE/21.04_COM_Plan RDC M.jpg",
+   "src":"/assets/images/21.04_FONTCOUVERTE/FONTCOUVERTE_04_TEST.jpg",
    "width":"100%",
    "linkTo":"/projets/fontcouverte"
 },
     {
-      "src": "/assets/images/21.04_FONTCOUVERTE/01.3.jpg",
-      "width": "100%",
-      "linkTo": "/projets/fontcouverte"
-    },
+   "src":"/assets/images/21.04_FONTCOUVERTE/FONTCOUVERTE_01_TEST.jpg",
+   "width":"100%",
+   "linkTo":"/projets/fontcouverte"
+},
     {
    "src":"/assets/images/20.02_LATEOULE/LATEOULE_02.jpg",
    "width":"100%",
