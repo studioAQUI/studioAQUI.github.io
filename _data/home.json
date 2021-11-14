@@ -12,9 +12,14 @@
 },
     {
       "src": "/assets/images/19.01_ALESIA/L1001528.jpeg",
-      "width": "70%",
+      "width": "100%",
       "linkTo": "/projets/alesia"
     },
+    {
+   "src":"/assets/images/21.04_FONTCOUVERTE/21.04_COM_Plan RDC M.jpg",
+   "width":"100%",
+   "linkTo":"/projets/fontcouverte"
+},
     {
       "src": "/assets/images/20.05_BUROS/01_FINALE_3000x2000.jpg",
       "width": "100%",
