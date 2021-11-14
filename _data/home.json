@@ -51,10 +51,14 @@
    "linkTo":"/projets/gemozac"
 },
    {
-   "src":"/assets/images/20.01_GEMOZAC/GÉMOZAC_01_TEST.jpg",
+   "src":"/assets/images/20.04_VOLTAIRE/VOLTAIRE_05.jpg",
    "width":"100%",
-   "linkTo":"/projets/gemozac"
+   "linkTo":"/projets/voltaire"
 },
-
+{
+   "src":"/assets/images/20.04_VOLTAIRE/VOLTAIRE_05.jpg",
+   "width":"100%",
+   "linkTo":"/projets/voltaire"
+},
 
 ]
