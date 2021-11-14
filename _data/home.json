@@ -56,13 +56,13 @@
    "linkTo":"/projets/saint-sauveur"
 },
     {
-   "src":"/assets/images/20.01_GEMOZAC/GEMOZAC_01_TEST.jpg",
-   "width":"100%",
-   "linkTo":"/projets/gemozac"
-},
-   {
    "src":"/assets/images/19.02_BESSE/BESSE_13.jpg",
    "width":"100%",
    "linkTo":"/projets/besse"
+},
+    {
+   "src":"/assets/images/20.01_GEMOZAC/GEMOZAC_01_TEST.jpg",
+   "width":"100%",
+   "linkTo":"/projets/gemozac"
 }
 ]
