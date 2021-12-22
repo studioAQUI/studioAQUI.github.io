@@ -29,11 +29,11 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <div class="lg:hidden space-y-6">
+  <div class="lg:hidden space-y-20">
     {% for img in site.data.home %}
       <div>
         <a href={{img.linkTo}}>
-          <img class="block mx-auto m-0" style="max-width: {{ img.width }};" src="{{ img.src }}">
+          <img class="block mx-auto" style="width: 90%;" src="{{ img.src }}">
         </a>
       </div>
     {% endfor %}

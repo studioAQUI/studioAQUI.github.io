@@ -4,16 +4,26 @@
 <body>
   {%- include burger.html -%}
   {%- include modal.html -%}
+    <!-- rendu desktop -->
     <div class="hidden lg:grid grid-cols-7 py-5 px-10">
       {%- include nav.html -%}
       <div class="col-span-5">
         {{ content }}
       </div>
     </div>
-    <div id="content" class="lg:hidden">
-      {{ content }}
+    <!-- rendu mobile -->
+    <div class="lg:hidden">
+      <a href="/">
+        <img src="/assets/logo/Logo-studio.AQUI.png" class="w-1/2 m-auto my-14"></img>
+      </a>
+      <div>{{ content }}</div>
+      <div class="text-center my-16 text-5xl">
+        studio.AQUI <br />
+        chanson & chimits architectes <br />
+        6 rue ringaud 31500 Toulouse <br />
+        contact@studio-aqui.fr
+      </div>
     </div>
-
   {%- include script.html -%}
 </body>
 

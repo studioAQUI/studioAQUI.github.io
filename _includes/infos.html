@@ -1,5 +1,5 @@
 <div class="text-5xl lg:text-sm pl-10">
-  <div class="grid grid-cols-2 gap-12">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-12">
     <div>
       <h2 class="text-7xl lg:text-2xl">présentation</h2>
       <br />
@@ -26,7 +26,7 @@
       </div>
 
     </div>
-    <div>
+    <div class="mt-10 lg:mt-0">
       <h2 class="text-7xl lg:text-2xl">contact</h2>
       <br />
       <div>
@@ -49,11 +49,11 @@
     </div>
 
   </div>
-  <hr class="my-10"/>
-  <div>
+  <div class="hidden lg:block">
+    <hr class="my-10"/>
     <h2 class="text-7xl lg:text-2xl">projets</h2>
     <br/>
-    <ul class="text-sm pr-10">
+    <ul class=" lg:text-sm pr-10">
       {% for projet in site.projets %}
       <li class="list-none">
         <span>{{projet.title}} |</span>
@@ -70,7 +70,7 @@
       </li>
       {% endfor %}
     </ul>
+    <hr class="mt-10"/>
   </div>
-  <hr class="mt-10"/>
 
 </div>
