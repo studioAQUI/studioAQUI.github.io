@@ -8,6 +8,9 @@
         <a class="hover:underline {% if page.url == '/infos/' %}underline{% endif %}" href="/infos/">infos</a>
       </li>
       <li>
+        <a class="hover:underline {% if page.url == '/cogito/' %}underline{% endif %}" href="/cogito/">cogito</a>
+      </li>
+      <li>
         <a class="hover:underline {% if page.url contains '/projets/' %}underline{% endif %}"
           href="/projets/">projets</a>
         {% if page.url contains '/projets/' %}
@@ -25,7 +28,7 @@
             <div>
               {% for projet in site.projets offset:5 limit:5 %}
               <li class="list-none">
-                <a class="text-sm hover:underline{% if page.url contains projet.url %}underline{% endif %}"
+                <a class="text-sm hover:underline {% if page.url contains projet.url %}underline{% endif %}"
                   href="{{ projet.url }}">
                   {{ projet.title }}</a>
               </li>
@@ -34,7 +37,7 @@
             <div>
               {% for projet in site.projets offset:10 %}
               <li class="list-none">
-                <a class="text-sm hover:underline{% if page.url contains projet.url %}underline{% endif %}"
+                <a class="text-sm hover:underline {% if page.url contains projet.url %}underline{% endif %}"
                   href="{{ projet.url }}">
                   {{ projet.title }}</a>
               </li>

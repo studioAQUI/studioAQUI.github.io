@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /cogito/
+---
+<div class="text-7xl lg:hidden text-center">{{page.title}}</div>
+<div class="lg:hidden mt-10">
+  {%- include project-info.html -%}
+</div>
+<div class="space-y-5">
+  {% for f in site.static_files %}
+  {% if f.path contains "cogito" %}
+  <img class="m-auto hidden lg:block" src="{{ f.path }}" style="max-width: 60%;"></img>
+  <img class="m-auto lg:hidden" src="{{ f.path }}"></img>
+  {% endif %}
+  {% endfor %}
+</div>
