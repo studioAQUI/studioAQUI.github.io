@@ -1,76 +1,76 @@
-<div class="text-5xl lg:text-base">
-<h2 class="text-7xl lg:text-2xl">présentation</h2>
-<br/>
-<div>« Plus c’est local, plus c’est universel » Fernando Tavora, architecte</div>
-<br/>
-<div>
-  studio.AQUI cherche à travers la conception et la construction d’espaces
-  bâti à intéroger le rapport au territoire. L’architecture étant une
-  expression de la culture, nous défendons une approche contextuelle face à
-  l’uniformisation à l’oeuvre. Cet ancrage vise à définir l’architecture
-  comme bien sociétal, à promouvoir et à défendre.
-</div>
-<br/>
-<div>
-  Nous cherchons à produite une architecture simple, débarassée d’artifices
-  ou de spectaculaire pour nous consacrer à l’essentiel. Par cette simplification,
-  nous visons à maitriser le processus pour retrouver un rapport simple à la
-  construction dans la double logique historique: esthétique et économique.
-</div>
-<br/>
-<div>
-  Ce positionnement vise modestement pour nous à répondre aux enjeux sociétaux
-  et environnementaux de notre temps.
-</div>
-<br/>
-<div>
-  AQUI*: ICI
-</div>
-<br/>
-<h2 class="text-7xl lg:text-2xl">contact</h2>
-<br/>
-<div>
-  studio.AQUI architectes
-  <br/>
-  6 rue ringaud 31500 Toulouse
-  <br/>
-  contact@studio-aqui.fr
-</div>
-<br/>
-<h2 class="text-7xl lg:text-2xl">équipe</h2>
-<br/>
-<div>
-  Mathilde Chanson, architecte associée
-  <br/>
-  Pierre Chimits, architecte associé
-  <br/>
-</div>
-<br/>
-<h2 class="text-7xl lg:text-2xl">projets</h2>
-<br/>
-<ul>
-  {% for projet in site.projets %}
-    <li class="list-none">
-      <div>.
-        {{projet.title}}
-        :
-        {{projet.description}}
-        -
-        {{projet.ville}}
+<div class="text-5xl lg:text-sm pl-10">
+  <div class="grid grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-7xl lg:text-2xl">présentation</h2>
+      <br />
+      <div>« Plus c’est local, plus c’est universel » Fernando Tavora, architecte</div>
+      <br />
+      <div>
+        studio.AQUI cherche à travers la conception et la construction d’espaces
+        bâti à intéroger le rapport au territoire. L’architecture étant une
+        expression de la culture, nous défendons une approche contextuelle face à
+        l’uniformisation à l’oeuvre. Cet ancrage vise à définir l’architecture
+        comme bien sociétal, à promouvoir et à défendre.
       </div>
-      <div class="text-4xl lg:text-xs">
-        {% if projet.count %}
-          <span>{{projet.cout}} |</span>
+      <br />
+      <div>
+        Nous cherchons à produite une architecture simple, débarassée d’artifices
+        ou de spectaculaire pour nous consacrer à l’essentiel. Par cette simplification,
+        nous visons à maitriser le processus pour retrouver un rapport simple à la
+        construction dans la double logique historique: esthétique et économique.
+      </div>
+      <br />
+      <div>
+        Ce positionnement vise modestement pour nous à répondre aux enjeux sociétaux
+        et environnementaux de notre temps.
+      </div>
+
+    </div>
+    <div>
+      <h2 class="text-7xl lg:text-2xl">contact</h2>
+      <br />
+      <div>
+        studio.AQUI architectes
+        <br />
+        6 rue ringaud 31500 Toulouse
+        <br />
+        contact@studio-aqui.fr
+      </div>
+      <br />
+      <h2 class="text-7xl lg:text-2xl mt-10">équipe</h2>
+      <br />
+      <div>
+        Mathilde Chanson, architecte DE - HMONP
+        <br />
+        Pierre Chimits, architecte DE - HMONP
+        <br />
+      </div>
+      <br />
+    </div>
+
+  </div>
+  <hr class="my-10"/>
+  <div>
+    <h2 class="text-7xl lg:text-2xl">projets</h2>
+    <br/>
+    <ul class="text-sm pr-10">
+      {% for projet in site.projets %}
+      <li class="list-none">
+        <span>{{projet.title}} |</span>
+        <span>{{projet.description}} |</span>
+        {% if projet.adresse %}
+        <span>{{projet.adresse}} |</span>
         {% endif %}
-        {% if projet.surface %}
-          <span>{{projet.surface}} |</span>
+        {% if projet.maitre_d_oeuvre %}
+        <span>{{projet.maitre_d_oeuvre}} |</span>
         {% endif %}
         {% if projet.etat %}
-          <span>{{projet.etat}}</span>
+        <span>{{projet.etat}}</span>
         {% endif %}
-      </div>
-    </li>
-  </ul>
-{% endfor %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <hr class="mt-10"/>
 
 </div>
