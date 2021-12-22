@@ -22,3 +22,11 @@ h1 {
   height: 100%; /* Full height */
   background-color: #fefefe;
 }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.5px solid black;
+  padding: 0;
+}

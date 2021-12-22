@@ -4,19 +4,16 @@
 <body>
   {%- include burger.html -%}
   {%- include modal.html -%}
-  <div class="mt-10 ml-5 lg:ml-10 mr-5 lg:mr-20">
-    {%- include header.html -%}
-    <div class="hidden lg:flex flex-row">
+    <div class="hidden lg:grid grid-cols-7 pt-5">
       {%- include nav.html -%}
-      <div>
+      <div class="col-span-5">
         {{ content }}
       </div>
     </div>
     <div id="content" class="lg:hidden">
       {{ content }}
     </div>
-    {%- include footer.html -%}
-  </div>
+
   {%- include script.html -%}
 </body>
 

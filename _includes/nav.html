@@ -1,31 +1,57 @@
-<nav class="w-60 flex-shrink-0">
-  <ul>
-    <li class="text-xl">
-      <a class="{% if page.url == '/infos/' %}font-bold{% endif %}" href="/infos/">infos</a>
-    </li>
-    <li class="text-xl">
-      <a class="{% if page.url contains '/projets/' %}font-bold{% endif %}" href="/projets/">projets</a>
-      {% if page.url contains '/projets/' %}
-        <ul class="leading-3 list-none">
-          {% for projet in site.projets %}
-            <li class="list-none">
-              .
-              <a class="text-sm {% if page.url contains projet.url %}font-bold{% endif %}" href="{{ projet.url }}">
-                {{ projet.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  </ul>
-
-
-  {% if page.url '/projets/' %}
+<nav class="pl-10 pr-10 col-span-2 h-100%">
+  <div class="w-100% sticky top-5">
+    <img src="/assets/logo/Logo-studio.AQUI.png" class="w-100% mb-10"></img>
+    <ul>
+      <li>
+        <a class="{% if page.url == '/infos/' %}underline{% endif %}" href="/infos/">infos</a>
+      </li>
+      <li>
+        <a class="{% if page.url contains '/projets/' %}underline{% endif %}" href="/projets/">projets</a>
+        {% if page.url contains '/projets/' %}
+          <ul class="leading-3 list-none mt-2">
+            <div class="grid grid-cols-3 gap-1">
+              <div>
+                {% for projet in site.projets limit:5 %}
+                <li class="list-none">
+                  <a class="text-sm {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
+                    {{ projet.title }}</a>
+                </li>
+              {% endfor %}
+              </div>
+              <div>
+                {% for projet in site.projets offset:5 limit:5 %}
+                <li class="list-none">
+                  <a class="text-sm {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
+                    {{ projet.title }}</a>
+                </li>
+              {% endfor %}
+              </div>
+              <div>
+                {% for projet in site.projets offset:10 %}
+                <li class="list-none">
+                  <a class="text-sm {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
+                    {{ projet.title }}</a>
+                </li>
+              {% endfor %}
+              </div>
+            </div>
+          </ul>
+        {% endif %}
+      </li>
+    </ul>
+    {% if page.url '/projets/' %}
     {% if page.description %}
-      <div class="mt-16"></div>
-      {%- include project-info.html -%}
+    <div class="mt-10"></div>
+        {%- include project-info.html -%}
+      {% endif %}
     {% endif %}
-  {% endif %}
+  </div>
 
+  <div class="fixed bottom-5 left-10 w-100% text-sm">
+    studio.AQUI <br/>
+    chanson & chimits architectes <br/>
+    6 rue ringaud 31500 Toulouse <br/>
+    contact@studio-aqui.fr
+  </div>
 
 </nav>
