@@ -3,17 +3,12 @@ layout: default
 permalink: /cogito/
 ---
 
-<div class="space-y-5 hidden lg:block">
-  {% for f in site.static_files %}
-  {% if f.path contains "cogito" %}
-  <img class="m-auto hidden lg:block" src="{{ f.path }}" style="max-width: 60%;"></img>
-  {% endif %}
-  {% endfor %}
-</div>
-<div class="space-y-16 lg:hidden">
-  {% for f in site.static_files %}
-  {% if f.path contains "cogito" %}
-  <img class="m-auto" src="{{ f.path }}" style="max-width: 90%;"></img>
-  {% endif %}
-  {% endfor %}
+<div class="grid grid-cols-3 gap-6">
+  {% for img in site.data.cogito %}
+    <div>
+      <img src="{{ img.src }}" alt="{{ img.description }}">
+      <div class="mt-2 text-xs">{{ img.author }}</div>
+      <div class="text-xs">{{ img.description }}</div>
+    </div>
+    {% endfor %}
 </div>
