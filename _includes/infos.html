@@ -1,9 +1,8 @@
-<div class="text-5xl lg:text-sm pl-10">
+<div class="text-4xl lg:text-sm lg:pl-10 w-11/12 lg:w-full m-auto">
   <div class="lg:grid lg:grid-cols-2 lg:gap-12">
     <div>
-      <h2 class="text-7xl lg:text-2xl">présentation</h2>
-      <br />
-      <div>« Plus c’est local, plus c’est universel » Fernando Tavora, architecte</div>
+      <h2 class="text-2xl hidden lg:block mb-0 lg:mb-3">présentation</h2>
+      <div>« Plus c’est local, plus c’est universel » Fernando Tavora, architecte.</div>
       <br />
       <div>
         studio.AQUI cherche à travers la conception et la construction d’espaces
@@ -27,33 +26,25 @@
 
     </div>
     <div class="mt-10 lg:mt-0">
-      <h2 class="text-7xl lg:text-2xl">contact</h2>
-      <br />
-      <div>
-        studio.AQUI architectes
-        <br />
-        6 rue ringaud 31500 Toulouse
-        <br />
-        contact@studio-aqui.fr
-      </div>
-      <br />
-      <h2 class="text-7xl lg:text-2xl mt-10">équipe</h2>
-      <br />
+      <h2 class="lg:text-2xl font-bold lg:font-normal mb-0 lg:mb-3">contact</h2>
+      {%- include contact.html -%}
+      <h2 class="lg:text-2xl mt-6 font-bold lg:font-normal mb-0 lg:mb-3">équipe</h2>
       <div>
         Mathilde Chanson, architecte DE - HMONP
         <br />
         Pierre Chimits, architecte DE - HMONP
-        <br />
       </div>
-      <br />
+
+      <a href="https://www.instagram.com/studio.aqui/?hl=fr" target="_blank">
+        <h2 class="lg:text-2xl mt-6 font-bold lg:font-normal">instagram</h2>
+      </a>
     </div>
 
   </div>
   <div class="hidden lg:block">
-    <hr class="my-10"/>
-    <h2 class="text-7xl lg:text-2xl">projets</h2>
-    <br/>
-    <ul class=" lg:text-sm pr-10">
+    <h2 class="lg:text-2xl mt-10 mb-3">projets</h2>
+    <ul class="lg:text-sm pr-10">
+      <hr/>
       {% for projet in site.projets %}
       <li class="list-none">
         <span>{{projet.title}} |</span>
@@ -68,9 +59,9 @@
         <span>{{projet.etat}}</span>
         {% endif %}
       </li>
+      <hr />
       {% endfor %}
     </ul>
-    <hr class="mt-10"/>
   </div>
 
 </div>

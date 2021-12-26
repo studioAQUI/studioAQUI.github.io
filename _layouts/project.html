@@ -16,7 +16,7 @@ layout: default
 <div class="space-y-16 lg:hidden">
   {% for f in site.static_files %}
   {% if f.path contains page.name %}
-  <img class="m-auto" style="max-width: 90%;" src="{{ f.path }}"></img>
+  <img class="m-auto w-11/12" src="{{ f.path }}"></img>
   {% endif %}
   {% endfor %}
 </div>

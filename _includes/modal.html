@@ -1,40 +1,18 @@
 <!-- The Modal -->
 <div class="modal" id="menu-modal">
   <button class="lg:hidden absolute top-14 left-10" id="close-button">
-    <img src="/assets/icons/close.png" width="60px"/>
+    <img src="/assets/icons/close.png" width="60px" />
   </button>
 
   <nav class="mt-10 text-center">
     <ul class="list-none leading-loose space-y-10">
       <li class="text-6xl">
-        <a class="{% if page.url == '/' %}underline{% endif %}" href="/">home</a>
+        {% for projet in site.projets %}
+      <li class="list-none">
+        <a class="text-5xl {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
+          {{ projet.title }}</a>
       </li>
-      <li class="text-6xl">
-        <a class="{% if page.url == '/infos/' %}underline{% endif %}" href="/infos/">infos</a>
-      </li>
-      <li class="text-6xl">
-        <a class="{% if page.url == '/cogito/' %}underline{% endif %}" href="/cogito/">cogito</a>
-      </li>
-      <li class="mb-2 text-6xl">projets</li>
-      <li class="text-6xl">
-        <div class="grid grid-cols-2">
-          <ul class="list-none leading-normal">
-            {% for projet in site.projets limit:8 %}
-              <li class="list-none">
-                <a class="text-5xl {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
-                  {{ projet.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-          <ul class="list-none leading-relaxed">
-            {% for projet in site.projets offset:8 %}
-              <li class="list-none leading-normal">
-                <a class="text-5xl {% if page.url contains projet.url %}underline{% endif %}" href="{{ projet.url }}">
-                  {{ projet.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+      {% endfor %}
       </li>
     </ul>
   </nav>
