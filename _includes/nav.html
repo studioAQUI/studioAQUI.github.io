@@ -13,8 +13,7 @@
       <li>
         <a class="hover:underline {% if page.url contains '/projets/' %}underline{% endif %}"
           href="/projets/">projets</a>
-        {% if page.url contains '/projets/' %}
-        <ul class="leading-3 list-none mt-2">
+        <ul class="leading-3 list-none">
           <div class="grid grid-cols-3 gap-1">
             <div>
               {% for projet in site.projets limit:5 %}
@@ -45,7 +44,6 @@
             </div>
           </div>
         </ul>
-        {% endif %}
       </li>
     </ul>
     {% if page.url '/projets/' %}
