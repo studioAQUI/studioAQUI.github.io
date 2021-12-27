@@ -58,3 +58,17 @@ Les objets sont séparés par des virgules dans un tableau `[{}, {}, ..., {}]`. 
 ...
 ```
 
+## Modifier le cogito
+
+Les images qui s'affichent sur le cogito sont décrites dans le fichier `_data/cogito.json`. Chaque photo est représentée par un "objet" de la forme suivante :
+
+
+```json
+{
+  "src": "/assets/images/cogito/1.jpg",  // chemin d'accès au fichier image, dans le répertoire cogito par défaut
+  "author": "Auteur", // nom de l'auteur de la photo ou du projet
+  "description": "Description" // description de l'image
+}
+```
+
+Les images apparaissent dans l'ordre du tableau de données, de haut en bas et de gauche à droite.
