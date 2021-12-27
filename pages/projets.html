@@ -1,4 +1,16 @@
 ---
-layout: home
+layout: default
 permalink: /projets/
 ---
+
+<ul class="lg:hidden text-5xl w-11/12 m-auto space-y-6">
+<hr/>
+{% for projet in site.projets %}
+<li class="list-none">
+  <a class="hover:underline {% if page.url contains projet.url %}underline{% endif %}"
+    href="{{ projet.url }}">
+    {{ projet.title }}</a>
+</li>
+<hr/>
+{% endfor %}
+</ul>

@@ -12,8 +12,7 @@
         <a class="hover:underline {% if page.url == '/cogito/' %}underline{% endif %}" href="/cogito/">cogito</a>
       </li>
       <li>
-        <a class="hover:underline {% if page.url contains '/projets/' %}underline{% endif %}"
-          href="/projets/">projets</a>
+        <div>projets</div>
         <ul class="leading-3 list-none">
           <div class="grid grid-cols-3 gap-1">
             <div>
@@ -49,13 +48,13 @@
     </ul>
     {% if page.url '/projets/' %}
     {% if page.description %}
-    <div class="mt-10"></div>
+    <div class="mt-4"></div>
     {%- include project-info.html -%}
     {% endif %}
     {% endif %}
   </div>
 
-  <div class="fixed bottom-5 left-10 w-100% text-sm">
+  <div class="fixed bottom-5 left-10 w-100% text-sm hidden xl:block">
     {%- include contact.html -%}
   </div>
 

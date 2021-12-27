@@ -1,8 +1,8 @@
-<nav class="flex flex-row justify-between text-5xl w-11/12 m-auto mb-20">
+<nav class="flex flex-row justify-between text-5xl w-11/12 m-auto py-16 sticky top-0">
   <a href="/">studio.AQUI</a>
   <div class="flex flex-row">
-    <a class="mr-6 hover:underline {% if page.url == '/infos/' %}underline{% endif %}" href="/infos/">infos</a>
-    <a class="mr-6 hover:underline {% if page.url == '/cogito/' %}underline{% endif %}" href="/cogito/">cogito</a>
-    <div id="projets-mobile">projets</div>
+    <a class="mr-6 {% if page.url == '/infos/' %}underline{% endif %}" href="/infos/">infos</a>
+    <a class="mr-6 {% if page.url == '/cogito/' %}underline{% endif %}" href="/cogito/">cogito</a>
+    <a class="{% if page.url == '/projets/' %}underline{% endif %}" href="/projets/">projets</a>
   </div>
 </nav>

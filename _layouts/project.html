@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-<div class="text-7xl mt-20 lg:mt-0 lg:hidden text-center">{{page.title}}</div>
-<div class="lg:hidden my-10 mx-auto" style="max-width: 90%;">
-  {%- include project-info.html -%}
-</div>
+
+
 <div class="space-y-5 hidden lg:block">
   {% for f in site.static_files %}
   {% if f.path contains page.name %}
@@ -13,10 +11,14 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="space-y-16 lg:hidden">
+
+<div class="space-y-16 lg:hidden m-auto w-11/12">
   {% for f in site.static_files %}
   {% if f.path contains page.name %}
-  <img class="m-auto w-11/12" src="{{ f.path }}"></img>
+  <img class="w-full" src="{{ f.path }}"></img>
   {% endif %}
   {% endfor %}
+  <div class="lg:hidden my-10 mx-auto">
+    {%- include project-info.html -%}
+  </div>
 </div>

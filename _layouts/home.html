@@ -29,13 +29,16 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <div class="lg:hidden space-y-20">
-    {% for img in site.data.home %}
-      <div>
-        <a href={{img.linkTo}}>
-          <img class="block mx-auto w-11/12" src="{{ img.src }}">
-        </a>
-      </div>
-    {% endfor %}
+</div>
+<div class="lg:hidden space-y-20 mx-auto w-11/12">
+  {% for img in site.data.home %}
+    <div>
+      <a href={{img.linkTo}}>
+        <img class="w-full" src="{{ img.src }}">
+      </a>
+    </div>
+  {% endfor %}
+  <div class="text-4xl lg:hidden">
+    {%- include contact.html -%}
   </div>
 </div>
