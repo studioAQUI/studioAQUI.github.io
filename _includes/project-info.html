@@ -10,7 +10,7 @@
         {{page.maitre_d_oeuvre}}
       </div>
     {% endif %}
-    
+
     {% if page.maitre_d_ouvrage %}
       <div>
         <span>maître d’ouvrage</span>
@@ -18,7 +18,7 @@
         {{page.maitre_d_ouvrage}}
       </div>
     {% endif %}
-    
+
     {% if page.adresse %}
       <div>
         <span>lieu</span>
@@ -50,19 +50,19 @@
         {{page.surface}}
       </div>
     {% endif %}
-    
+
+    {% if page.etat %}
+    <div>
+      <span>état</span>
+      |
+      {{page.etat}}
+    </div>
+    {% endif %}
     {% if page.credits%}
       <div>
         <span>crédits</span>
         |
         {{page.credits}}
-      </div>
-    {% endif %}
-    {% if page.etat %}
-      <div>
-        <span>état</span>
-        |
-        {{page.etat}}
       </div>
     {% endif %}
   </div>
