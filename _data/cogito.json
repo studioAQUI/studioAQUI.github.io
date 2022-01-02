@@ -1,8 +1,8 @@
 [
   {
     "src": "/assets/images/cogito/1.jpg",
-    "author": "Auteur",
-    "description": "Description"
+    "author": "Josef Albers",
+    "description": "L'interaction des couleurs"
   },
   {
     "src": "/assets/images/cogito/2.jpg",
@@ -30,8 +30,8 @@
   },
   {
     "src": "/assets/images/cogito/7.jpg",
-    "author": "Auteur",
-    "description": "Description"
+    "author": "Louis I. Kahn",
+    "description": "Cathédrale d'Albi"
   },
   {
     "src": "/assets/images/cogito/8.jpg",
