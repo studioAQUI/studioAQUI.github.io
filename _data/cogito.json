@@ -26,7 +26,8 @@
   },
   {
     "src": "/assets/images/cogito/6.jpg",
-    "author": "Valentine Schlegel",
+    "author": "Auteur",
+    "description": "Description"
   },
   {
     "src": "/assets/images/cogito/7.jpg",
@@ -40,7 +41,7 @@
   },
   {
     "src": "/assets/images/cogito/9.jpg",
-    "author": "Jean Cocteau",
+    "author": "Auteur",
     "description": "Description"
   },
   {
