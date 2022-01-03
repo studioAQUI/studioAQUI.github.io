@@ -106,7 +106,7 @@
   },
   {
     "src": "/assets/images/cogito/22.jpg",
-    "author": "donald judd ",
+    "author": "donald judd",
     "description": "F.82-2, 1989"
   },
   {
@@ -118,5 +118,20 @@
     "src": "/assets/images/cogito/24.jpg",
     "author": "ray & charles eames",
     "description": "CSH8, 1949"
+  },
+  {
+    "src": "/assets/images/cogito/25.jpg",
+    "author": "gustave caillebotte",
+    "description": "les raboteurs de parquet, 1875"
+  },
+  {
+    "src": "/assets/images/cogito/26.jpg",
+    "author": "francois-franque",
+    "description": "maison de m.marquis de villefranche, avignon, 1762"
+  },
+  {
+    "src": "/assets/images/cogito/27.jpg",
+    "author": "sigurd lewerentzs",
+    "description": "chapelle de la résurrection, cimetière des bois, stockholm, 1925"
   }
 ]
