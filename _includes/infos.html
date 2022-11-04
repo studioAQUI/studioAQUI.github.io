@@ -52,30 +52,4 @@
     </div>
 
   </div>
-  <div class="hidden lg:block">
-    <h2 class="lg:text-2xl mt-10 mb-3">projets</h2>
-    <ul class="lg:text-sm pr-10">
-      <hr />
-      {% for projet in site.projets %}
-      <li class="list-none">
-        <span>{{projet.title}} |</span>
-        <span>{{projet.description}} |</span>
-        {% if projet.adresse %}
-        <span>{{projet.adresse}} |</span>
-        {% endif %}
-        {% if projet.maitre_d_oeuvre %}
-        <span>{{projet.maitre_d_oeuvre}} |</span>
-        {% endif %}
-        {% if projet.maitre_d_ouvrage %}
-        <span>{{projet.maitre_d_ouvrage}} |</span>
-        {% endif %}
-        {% if projet.etat %}
-        <span>{{projet.etat}}</span>
-        {% endif %}
-      </li>
-      <hr />
-      {% endfor %}
-    </ul>
-  </div>
-
 </div>
