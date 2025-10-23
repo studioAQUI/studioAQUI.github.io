@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss"
+	],
+	"sourcesContent": [
+		"@import url(\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap\");\n\nbody {\n  font-family: \"Helvetica Neue\", \"Open Sans\", \"sans serif\";\n}\n\nh1 {\n  font-size: xx-large;\n}\n\n/* The Modal (background) */\n.modal {\n  display: none; /* Hidden by default */\n  position: fixed; /* Stay in place */\n  z-index: 1; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  background-color: #fefefe;\n  overflow-y: hidden;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 0.5px solid black;\n  padding: 0;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,OAAO,CAAC,4IAAI;AAEZ,AAAA,IAAI,CAAC,EACH,WAAW,EAAE,2CAA2C,GACzD;;AAED,AAAA,EAAE,CAAC,EACD,SAAS,EAAE,QAAQ,GACpB;;AAED,4BAA4B;AAC5B,AAAA,MAAM,CAAC,EACL,OAAO,EAAE,IAAI,EAAE,uBAAuB,CACtC,QAAQ,EAAE,KAAK,EAAE,mBAAmB,CACpC,OAAO,EAAE,CAAC,EAAE,gBAAgB,CAC5B,IAAI,EAAE,CAAC,EACP,GAAG,EAAE,CAAC,EACN,KAAK,EAAE,IAAI,EAAE,gBAAgB,CAC7B,MAAM,EAAE,IAAI,EAAE,iBAAiB,CAC/B,gBAAgB,EAAE,OAAO,EACzB,UAAU,EAAE,MAAM,GACnB;;AAED,AAAA,EAAE,CAAC,EACD,OAAO,EAAE,KAAK,EACd,MAAM,EAAE,GAAG,EACX,MAAM,EAAE,CAAC,EACT,UAAU,EAAE,iBAAiB,EAC7B,OAAO,EAAE,CAAC,GACX"
+}
